@@ -12,7 +12,7 @@ TnD_RAT is a basic Remote Access Trojan that I made from scratch. I've tested to
 * Connect to the server using the RSA id.
 * Navigate to the directory where the RSA id is stored.
 * Then run the following command to ssh into the server.
-bash ```
+```bash 
   ssh -i id_rsa <username>@IP_Address
 ```
 * After connecting to the server, start a python server in the folder containing stage2 payload.
